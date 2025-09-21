@@ -156,10 +156,13 @@ const Home = () => {
   const galleryItems = [
     { id: 1, image: '/images/children/Stunning Yoruba child.png', category: 'Yoruba', votes: 1834, views: 6200, title: 'Stunning Yoruba Child', ethnic: 'Yoruba Traditional Attire', fallback: 'https://images.unsplash.com/photo-1594736797933-d0eeaa4d6689?w=400&h=600&fit=crop' },
     { id: 2, image: '/images/children/Stunning Igbo boy.png', category: 'Igbo', votes: 1545, views: 5800, title: 'Stunning Igbo Boy', ethnic: 'Igbo Traditional Wear', fallback: 'https://images.unsplash.com/photo-1583391733956-6c6b8b6d2b67?w=400&h=600&fit=crop' },
-    { id: 3, image: '/images/children/Stunning Edo child.png', category: 'Edo', votes: 1423, views: 5450, title: 'Stunning Edo Child', ethnic: 'Edo Cultural Heritage', fallback: 'https://images.unsplash.com/photo-1596265371388-43edbaadab94?w=400&h=600&fit=crop' },
-    { id: 4, image: '/images/children/Stunning Igala child.png', category: 'Igala', votes: 1312, views: 4900, title: 'Stunning Igala Child', ethnic: 'Igala Royal Attire', fallback: 'https://images.unsplash.com/photo-1586240847919-ef5c31a4f27a?w=400&h=600&fit=crop' },
-    { id: 5, image: '/images/children/stunning Idoma child.png', category: 'Idoma', votes: 1198, views: 4650, title: 'Stunning Idoma Child', ethnic: 'Idoma Traditional Style', fallback: 'https://images.unsplash.com/photo-1595777216528-85038c02d1ea?w=400&h=600&fit=crop' },
-    { id: 6, image: '/images/children/stunning Tiv child.png', category: 'Tiv', votes: 1087, views: 4200, title: 'Stunning Tiv Child', ethnic: 'Tiv Cultural Dress', fallback: 'https://images.unsplash.com/photo-1564069114553-7215e1ff1890?w=400&h=600&fit=crop' }
+    { id: 3, image: '/images/children/Stunning Hausa Child.png', category: 'Hausa', votes: 1698, views: 5950, title: 'Stunning Hausa Child', ethnic: 'Hausa Traditional Attire', fallback: 'https://images.unsplash.com/photo-1596265371388-43edbaadab94?w=400&h=600&fit=crop' },
+    { id: 4, image: '/images/children/Stunning Edo child.png', category: 'Edo', votes: 1423, views: 5450, title: 'Stunning Edo Child', ethnic: 'Edo Cultural Heritage', fallback: 'https://images.unsplash.com/photo-1596265371388-43edbaadab94?w=400&h=600&fit=crop' },
+    { id: 5, image: '/images/children/Stunning Igala child.png', category: 'Igala', votes: 1312, views: 4900, title: 'Stunning Igala Child', ethnic: 'Igala Royal Attire', fallback: 'https://images.unsplash.com/photo-1586240847919-ef5c31a4f27a?w=400&h=600&fit=crop' },
+    { id: 6, image: '/images/children/Stunning Ebira Child.png', category: 'Ebira', votes: 1276, views: 4750, title: 'Stunning Ebira Child', ethnic: 'Ebira Cultural Heritage', fallback: 'https://images.unsplash.com/photo-1595777216528-85038c02d1ea?w=400&h=600&fit=crop' },
+    { id: 7, image: '/images/children/stunning Fulani child.png', category: 'Fulani', votes: 1254, views: 4680, title: 'Stunning Fulani Child', ethnic: 'Fulani Traditional Style', fallback: 'https://images.unsplash.com/photo-1564069114553-7215e1ff1890?w=400&h=600&fit=crop' },
+    { id: 8, image: '/images/children/stunning Idoma child.png', category: 'Idoma', votes: 1198, views: 4650, title: 'Stunning Idoma Child', ethnic: 'Idoma Traditional Style', fallback: 'https://images.unsplash.com/photo-1595777216528-85038c02d1ea?w=400&h=600&fit=crop' },
+    { id: 9, image: '/images/children/stunning Tiv child.png', category: 'Tiv', votes: 1087, views: 4200, title: 'Stunning Tiv Child', ethnic: 'Tiv Cultural Dress', fallback: 'https://images.unsplash.com/photo-1564069114553-7215e1ff1890?w=400&h=600&fit=crop' }
   ];
 
   const howItWorks = [
@@ -583,8 +586,8 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {galleryItems.slice(0, 6).map((item, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+            {galleryItems.map((item, index) => (
               <motion.div
                 key={item.id}
                 initial={{ opacity: 0, y: 30 }}
