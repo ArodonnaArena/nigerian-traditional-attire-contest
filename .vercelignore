@@ -1,0 +1,29 @@
+# Dependencies
+frontend/node_modules/
+node_modules/
+
+# Development files
+*.log
+*.md
+.DS_Store
+.git/
+.gitignore
+
+# Environment variables (will be set in Vercel dashboard)
+frontend/.env
+.env
+
+# Build cache
+frontend/.next/
+.next/
+frontend/dist/
+dist/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db
